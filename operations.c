@@ -50,7 +50,7 @@ void f_pint(stack_t **head, unsigned int counter)
  **/
 void f_push(stack_t **head, unsigned int counter)
 {
-    int n, j = 0, flag = 0;
+    int j = 0, flag = 0;
 
     if (bus.arg)
     {
@@ -80,13 +80,6 @@ void f_push(stack_t **head, unsigned int counter)
         free_stack(*head);
         exit(EXIT_FAILURE);
     }
-
-    n = atoi(bus.arg);
-
-    if (bus.lifi == 0)
-        addnode(head, n);
-    else
-        addqueue(head, n);
 }
 
 /**

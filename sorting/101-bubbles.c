@@ -7,7 +7,7 @@
  * @size: The size of the array.
  *
  */
-void bubble_sort(int *array, size_t size)
+void cocktail_sort_list(int *array, size_t size)
 {
 	size_t j, swap = 1, temp;
 
@@ -23,9 +23,8 @@ void bubble_sort(int *array, size_t size)
 			{
 				temp = array[j];
 				array[j] = array[j + 1];
-				array[j + 1] = temp;
-				print_array(array, size);
-				swap = 1 ;
+				array[j + 1] = temp;																					                           print_array(array, size);
+				swap = 1;
 			}
 		}
 	}
